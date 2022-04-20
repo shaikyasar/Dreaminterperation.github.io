@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is my fist wepage</title>
+    <style>
+        h1{
+            color: rgba(241, 233, 230, 0.883);
+            font-style: inherit ;
+            text-align: center;
+            font-size: 12px width;
+            
+        }
+
+             table,th,td{
+                border:opx solid red;
+                height: 30px;
+                width: 750px;
+                left: 50%;
+           }
+           #button1:hover{
+               background-color: rgb(172, 177, 233);
+           }
+           #button2:hover{
+               background-color: rgba(198, 14, 30, 0.86);
+           }
+            
+           .myDiv {
+               border: 3px outset  rgba(181, 41, 143, 0.404);
+               background-color: black;
+               width: 1500px;
+               height: 80px;
+               font: optional;
+           }
+           .myvideo{
+               border:0px solid plum;
+               text-align: left;
+               height: 0px;
+           }
+           body{
+            background-image: url("pngtree-autumn-home-textile-new-.jpg"); 
+           }       
+        
+           .topnav {
+                margin: 0;        
+                font-family: Arial, Helvetica, sans-serif;
+                overflow: hidden;
+                background-color: rgb(237, 180, 212);
+            }
+            .topnav a {
+                float: left;
+                color: #090b02;
+                text-align: center;
+                padding: 14px 36px;
+                text-decoration: none;
+                font-size: 17px;
+                border-right: 1px solid rgb(74, 42, 102);
+
+            }
+
+            .topnav a:hover {
+                background-color: rgb(253, 146, 196);
+                color: black;
+
+            }
+            .topnav a.active {
+                color: rgb(255, 255, 255);
+            }
+            .search{
+               float: right;
+               color: antiquewhite;
+               padding: 12px 75px;
+           }
+           .topnav input{
+               border: 2px solid black ;
+               border-radius: 14px;
+               padding: 3px 4px;
+               width: 200px;
+           }
+           #title{
+               font-style: oblique;
+               font-size: 12px;
+               background-color: rgb(111, 12, 65);
+               border: 2px solid rgb(27, 17, 17);
+               padding: 10px;
+               border-radius: 25px;
+           }
+           hr.new1{
+               border: 1px solid rgb(112, 10, 84);
+                border-radius: 1px;
+           }
+           hr.new2{
+            border: 1px solid rgb(112, 10, 84);
+                border-radius: 1px;
+
+           }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="search">
+        </div>
+      </div>
+    <div class="myDiv">
+    <h1>dream interperation wepsite</h1>
+    </div>
+    <table >
+        <form action="https://myclass.lpu.in/">
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        <tr>
+            <td>
+                <label for="fname">First name:</label>
+            </td>
+            <td>
+                <input type="text" id="fname" name="fname"><br>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last name:</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+        <tr>
+            <td><label for="email">email</label></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="date of birth">Date of birth:</label></td>
+            <td><input type="date" id="date of birth" name="birthday"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="state">state</label>
+            </td>
+            <td>
+                <select name="select the state" id="state">
+
+                    <option value="ss">select state</option>
+                    <option value="AP">andhra pradesh</option>
+                    <option value="PB">punjab</option>
+                    <option value="TN">tamilnadu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    slect your gender:
+                </p>
+            
+            </td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="rather not say" name="gender" value="rather not say">
+                <label for="rather not say">Rather not say</label> 
+
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="2">
+        <h2>
+        Now,lets go to our dream.......
+        </h2>
+            </td>
+        </tr>
+        <tr>
+            <div>
+            <td>
+            <label for="dream">if you want to give a title to your dream,what would it be?<br></label></td>
+            <td><input type="text" name="dream" id="dream"></td>
+        </div>
+        </tr>
+        <tr>
+            <td>
+                <label for="tell about your dream">Tell about your dream:</label></td>
+                <td>
+                <textarea id="tell about your dream" name="tell about your dream" rows="4" cols="50">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="is there anything else you wuld like to add?">Is there anything else you wuld like to add?</label></td>
+                <td>
+                <textarea id="is there anything else you wuld like to add?" name="is there anything else you wuld like to add?" rows="4" cols="50">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="f1()" id="button1">Submit</button><p id="demo"></p>
+            </td></tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Reset now" id="button2" onclick="f2()"></td>
+            </tr>
+        </form>
+    </table><hr class="new1">
+    <script>
+        function f1()
+        {
+        var txt;
+        if (confirm("press a button")) {
+            alert("by pressing ok button it will be submited");
+            txt="you presed ok";
+        } else {
+            alert("cancel");
+            txt="check the page again";
+        }
+        document.getElementById("demo").innerHTML = txt;
+        } 
+    
+        function f2()
+        {
+            alert("Are you sure you want to proceed");
+        }     
+        </script>
+                <p id="title">
+                    HERE,is a video about Inresting facts about dreams!</p>
+    <div class="myvideo">
+    <video width="320" height="240" controls>
+        <source src="Dreamvideo.mp4" type="video/mp4">
+      </video>
+    </div> 
+</body>
+</html>
